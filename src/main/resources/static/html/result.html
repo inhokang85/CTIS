@@ -1,0 +1,646 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<title>세임</title>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/layout.css">
+<link rel="stylesheet" href="http://www.nbo.or.kr/editor/css/editor.css" type="text/css" charset="utf-8"/>
+	<script src="http://www.nbo.or.kr/editor/js/editor_loader.js?environment=development" type="text/javascript" charset="utf-8"></script>
+<!--  <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css" />
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+		(function($){
+			$(window).on("load",function(){
+				$("#contents-wrap-sub #sub-contents").mCustomScrollbar({theme:"dark", axis:"y" });
+			});
+		})(jQuery)
+	</script> -->
+</head>
+<body>
+
+
+<div class="layer-pop group-wrap">
+	<div class="content-box">
+		<div class="tit">그룹훈련 비교</div>
+		<a href="" class="close-btn"><img src="../img/btn-close.png"></a>
+		<div class="box">
+		<table>
+			<tr>
+				<th>그룹 훈련 리스트</th>
+				<td>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group0101" type="checkbox" value="Y"><i></i><label for="chk-group0101">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+					<div class="chk-type02">
+						<input name="com_booth" class="chk1" id="chk-group01" type="checkbox" value="Y"><i></i><label for="chk-group01">4분기 이메일 훈련</label>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</div>
+		<div class="btn-center">
+		<a href="" class="btn-next">선택 그룹 비교하기<img src="../img/btn-arr-right.png"></a>
+		</div>
+	</div>
+</div>
+
+<div id="wrap">
+	<div id="left-menu">
+		<a href="" class="logo"><img src="../img/logo.png"></a>
+		<div class="user">
+			<img src="../img/user-img.png">
+			<p>관리자<a href=""><img src="../img/icon-setting.png"></a></p>
+			administrator
+			<div class="user-depth2 depth2">
+				<a href="">내정보</a>
+				<a href="">도움말</a>
+				<a href="">로그아웃</a>
+			</div>
+		</div>
+		<ul>
+			<li class="smenu01"><a href=""><img src="../img/left-menu-icon01.png">훈련시작</a></li>
+			<li><a href="" class="active"><img src="../img/left-menu-icon02.png">결과보기</a></li>
+			<li><a href=""><img src="../img/left-menu-icon03.png">대상자 관리</a></li>
+			<li><a href="" class="setting-hover"><img src="../img/left-menu-icon04.png">설정</a>
+				
+				<div class="settin-depth2 depth2">
+					<a href="">내정보</a>
+					<a href="">계정관리</a>
+					<a href="">템플릿관리</a>
+					<a href="">SMTP 설정</a>
+					<a href="">도움말</a>
+					<a href="">로그아웃</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="contents-wrap-sub">
+		<div id="top-tit">
+			<div class="sub-tit"><img src="../img/sub-tit02-icon.png">결과보기</div>
+			<div class="path"><img src="../img/icon-home.png" class="home"><img src="../img/icon-arr.png">결과보기<img src="../img/icon-arr.png">완료된 결과보기</div>
+		</div>
+		<div id="sub-contents">		
+			<div class="sub-wrap">
+				<div class="content-wrap">
+					<div class="sub-m-tit">완료된 결과보기</div>
+					<div class="template-edit-select">
+						<span>결과선택</span>
+						
+							<div class="Top_select">
+								<a href="javascript:;" class="Top_select_kind">모의훈련</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+									<a href="javascript:;">선택4</a>
+								</div>
+							</div>
+							<div class="Top_select">
+								<a href="javascript:;" class="Top_select_kind">훈련유형</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+									<a href="javascript:;">선택4</a>
+								</div>
+							</div>
+							<div class="Top_select">
+								<a href="javascript:;" class="Top_select_kind">훈련상태</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+									<a href="javascript:;">선택4</a>
+								</div>
+							</div>
+					</div>
+					<table class="template-box write-type02 result-table">
+						<colgroup>
+							<!-- <col width="2%" /> -->
+							<col width="12%" />
+							<col width="*" />
+							<col width="15%" />
+							<col width="7%" />
+							<col width="10%" />
+							<col width="8%" span="5"/>
+						</colgroup>
+
+						<thead>
+							<tr>
+								<!-- <th>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</th> -->
+								<th>그룹 훈련</th>
+								<th>세부 훈련</th>
+								<th>기간</th>
+								<th>훈련 상태</th>
+								<th>훈련 유형
+									<!-- 훈련유형 안내문구 -->
+									<button type="button" class="question-btn" title="훈련 유형 안내"></button>
+									<div class="question-cont"><!-- 버튼 hover시 노출-->
+										<p><span><img src="../img/sub-icon03.png" alt="링크 유형">링크유형</span>목표한 사용자에게 이메일의<br>링크를 클릭하여 감염되도록 유도합니다.</p>
+										<p><span><img src="../img/sub-icon04.png" alt="첨부파일 유형">첨부파일 유형</span>목표한 사용자에게 첨부파일은 다운로드 후<br> 해당 파일을 실행하여 감염되도록 유도합니다.</p>
+										<p><span><img src="../img/sub-icon05.png" alt="정보유출 유형">정보유출 유형</span>목표한 사용자에게 특정 페이지나 서비스를 제공하여<br> 자신의 정보 입력하고 유출되도록 유도합니다.</p>
+									</div>
+									<!-- // 훈련유형 안내문구 -->
+
+								</th>
+								<th>훈련 대상자</th>
+								<th>이메일 열람</th>
+								<th>감염</th>
+								<th>교육 대상자</th>
+								<th>신고자</th><!-- psw 추가 -->
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<!-- <td>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</td> -->
+								<td>4분기 이메일 훈련</td>
+								<td>본사, 인천 지사 훈련</td>
+								<td>2020-02-06 ~ 2020-03-06</td>
+								<td>훈련 진행</td>
+								<td>
+									<img src="../img/sub-icon03.png" alt="링크 유형">
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg01">
+										<span style="width:100%"></span>
+										<b>1400명</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg02">
+										<span style="width:60%"></span>
+										<b>60%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg03">
+										<span style="width:80%"></span>
+										<b>80%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg04">
+										<span style="width:50%"></span>
+										<b>50%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg05">
+										<span style="width:40%"></span>
+										<b>40%</b>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<!-- <td>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</td> -->
+								<td>4분기 이메일 훈련</td>
+								<td>본사, 인천 지사 훈련</td>
+								<td>2020-02-06 ~ 2020-03-06</td>
+								<td>훈련 진행</td>
+								<td>
+									<img src="../img/sub-icon03.png" alt="링크 유형">
+									<img src="../img/sub-icon04.png" alt="첨부파일 유형">
+									<img src="../img/sub-icon05.png" alt="정보유출 유형">
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg01">
+										<span style="width:100%"></span>
+										<b>1400명</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg02">
+										<span style="width:60%"></span>
+										<b>60%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg03">
+										<span style="width:80%"></span>
+										<b>80%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg04">
+										<span style="width:50%"></span>
+										<b>50%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg05">
+										<span style="width:40%"></span>
+										<b>40%</b>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<!-- <td>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</td> -->
+								<td>4분기 이메일 훈련</td>
+								<td>본사, 인천 지사 훈련</td>
+								<td>2020-02-06 ~ 2020-03-06</td>
+								<td>훈련 진행</td>
+								<td>
+									<img src="../img/sub-icon04.png" alt="첨부파일 유형">
+									<img src="../img/sub-icon05.png" alt="정보유출 유형">
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg01">
+										<span style="width:20%"></span>
+										<b class="ct">500명</b><!-- 센터정렬 ct 추가 -->
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg02">
+										<span style="width:60%"></span>
+										<b class="ct">60%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg03">
+										<span style="width:80%"></span>
+										<b class="ct">80%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg04">
+										<span style="width:50%"></span>
+										<b class="ct">50%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg05">
+										<span style="width:40%"></span>
+										<b class="ct">40%</b>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<!-- <td>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</td> -->
+								<td>4분기 이메일 훈련</td>
+								<td>본사, 인천 지사 훈련</td>
+								<td>2020-02-06 ~ 2020-03-06</td>
+								<td>훈련 진행</td>
+								<td>
+									<img src="../img/sub-icon04.png" alt="첨부파일 유형">
+									<img src="../img/sub-icon05.png" alt="정보유출 유형">
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg01">
+										<span style="width:20%"></span>
+										<b class="ct">500명</b><!-- 센터정렬 -->
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg02">
+										<span style="width:60%"></span>
+										<b class="ct">60%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg03">
+										<span style="width:80%"></span>
+										<b class="ct">80%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg04">
+										<span style="width:50%"></span>
+										<b class="ct">50%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg05">
+										<span style="width:40%"></span>
+										<b class="ct">40%</b>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<!-- <td>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</td> -->
+								<td>4분기 이메일 훈련</td>
+								<td>본사, 인천 지사 훈련</td>
+								<td>2020-02-06 ~ 2020-03-06</td>
+								<td>훈련 진행</td>
+								<td>
+									<img src="../img/sub-icon03.png" alt="링크 유형">
+									<img src="../img/sub-icon04.png" alt="첨부파일 유형">
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg01">
+										<span style="width:50%"></span>
+										<i>700명</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg02">
+										<span style="width:60%"></span>
+										<i>60%</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg03">
+										<span style="width:80%"></span>
+										<i>80%</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg04">
+										<span style="width:50%"></span>
+										<i>50%</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg05">
+										<span style="width:40%"></span>
+										<i>40%</i>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<!-- <td>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</td> -->
+								<td>4분기 이메일 훈련</td>
+								<td>본사, 인천 지사 훈련</td>
+								<td>2020-02-06 ~ 2020-03-06</td>
+								<td>훈련 진행</td>
+								<td>
+									<img src="../img/sub-icon05.png" alt="정보유출 유형">
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg01">
+										<span style="width:40%"></span>
+										<b>1500명</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg02">
+										<span style="width:20%"></span>
+										<i>20%</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg03">
+										<span style="width:30%"></span>
+										<i>30%</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg04">
+										<span style="width:40%"></span>
+										<i>40%</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar01 bar-bg05">
+										<span style="width:5%"></span>
+										<i>5%</i>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<!-- <td>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</td> -->
+								<td>4분기 이메일 훈련</td>
+								<td>본사, 인천 지사 훈련</td>
+								<td>2020-02-06 ~ 2020-03-06</td>
+								<td>훈련 진행</td>
+								<td>
+									<img src="../img/sub-icon03.png" alt="링크 유형">
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg01">
+										<span style="width:100%"></span>
+										<b>1400명</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg02">
+										<span style="width:40%"></span>
+										<b>40%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg03">
+										<span style="width:20%"></span>
+										<b>20%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg04">
+										<span style="width:40%"></span>
+										<b>40%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg05">
+										<span style="width:10%"></span>
+										<b>10%</b>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<!-- <td>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</td> -->
+								<td>4분기 이메일 훈련</td>
+								<td>본사, 인천 지사 훈련</td>
+								<td>2020-02-06 ~ 2020-03-06</td>
+								<td>훈련 진행</td>
+								<td>
+									<img src="../img/sub-icon03.png" alt="링크 유형">
+									<img src="../img/sub-icon05.png" alt="정보유출 유형">
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg01">
+										<span style="width:80%"></span>
+										<b>1400명</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg02">
+										<span style="width:50%"></span>
+										<i>50%</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg03">
+										<span style="width:20%"></span>
+										<i>20%</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg04">
+										<span style="width:20%"></span>
+										<i>20%</i>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg05">
+										<span style="width:20%"></span>
+										<i>20%</i>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<!-- <td>
+									<div class="chk-type02">
+										<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">&nbsp;</label>
+									</div>
+								</td> -->
+								<td>4분기 이메일 훈련</td>
+								<td>본사, 인천 지사 훈련</td>
+								<td>2020-02-06 ~ 2020-03-06</td>
+								<td>훈련 진행</td>
+								<td>
+									<img src="../img/sub-icon03.png" alt="링크 유형">
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg01">
+										<span style="width:50%"></span>
+										<b class="ct">500명</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg02">
+										<span style="width:40%"></span>
+										<b class="ct">40%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg03">
+										<span style="width:20%"></span>
+										<b class="ct">20%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg04">
+										<span style="width:40%"></span>
+										<b class="ct">40%</b>
+									</div>
+								</td>
+								<td>
+									<div class="progress-bar02 bar-bg05">
+										<span style="width:50%"></span>
+										<b class="ct">50%</b>
+									</div>
+								</td>
+							</tr>
+							
+							
+						</tbody>
+					
+					</table>
+					
+
+					<div class="paging">
+						<button type="button" title="맨 처음 페이지 이동"><img src="../img/btn-first.png" alt="맨 처음"></button>
+						<button type="button" title="이전 페이지 이동"><img src="../img/btn-pre.png" alt="이전"></button>
+
+						<ol>
+							<li><button type="button" title="현재페이지" class="select-page">1</button></li>
+							<li><button type="button">2</button></li>
+							<li><button type="button">3</button></li>
+							<li><button type="button">4</button></li>
+							<li><button type="button">5</button></li>
+							<li><button type="button">6</button></li>
+							<li><button type="button">7</button></li>
+							<li><button type="button">8</button></li>
+							<li><button type="button">9</button></li>
+							<li><button type="button">10</button></li>
+						</ol>
+
+						<button type="button" title="다음 페이지"><img src="../img/btn-next.png" alt="다음"></button>
+						<button type="button" title="맨 끝 페이지"><img src="../img/btn-end.png" alt="맨 끝"></button>
+					</div>	
+					
+					<div class="right-btn mb65">
+						<a href="" class="btn-common btn-sky group-btn">그룹 비교하기</a>
+						<a href="" class="btn-common btn-blue">통합 결과보기</a>
+					</div>
+
+
+				</div>
+			
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>

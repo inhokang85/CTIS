@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cyberone.ctis.user.mapper.RoleMapper">
+
+    <select id="getRoleInfo" resultType="Role"> 
+        SELECT role_id, role 
+        FROM role_v 
+        <trim prefix="WHERE" prefixOverrides="AND|OR">
+            <if test=" role != null and role != '' "> 
+                AND role = #{role} 
+            </if> 
+        </trim> 
+    </select>
+        
+</mapper>

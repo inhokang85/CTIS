@@ -1,0 +1,1067 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>세임</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/common.js"></script>
+
+<!-- 2020-04-26 add -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="../js/com_grape.js"></script>
+<!-- 2020-04-26 add -->
+<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+<link rel="stylesheet" type="text/css" href="../css/chart_st1.css">
+<link rel="stylesheet" type="text/css" href="../css/layout.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-editable-select.css">
+<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css" />
+<!--script src="../js/jquery.mCustomScrollbar.concat.min.js"></script-->
+
+
+<script src="../js/jquery.selectric.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+
+<!-- 메일 템플릿 보기 팝업 mail-temp-pop -->
+<div class="layer-pop mail-temp-pop" style="display: block;">
+    <div class="content-box">
+        <h2 class="sub-m-tit">메일 템플릿 보기</h2>
+        <a href="#" class="close-btn"><img src="../img/btn-close.png" alt=""></a>
+        
+        <!-- 템플릿 -->
+        <div class="temp-view-cont">
+             <h3 class="sub-s-tit">템플릿 설정</h3>  
+
+            <table class="template-box botder-top-1 write-type">
+                <colgroup>
+                    <col style="width:18%">
+                    <col style="width:32%">
+                    <col style="width:18%">
+                    <col style="width:32%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">템플릿 카테고리</th>
+                        <td>
+                            <span>레저</span>
+                        </td>
+                        <th scope="row">템플릿 유형</th>
+                        <td>
+                             <span>자격증명형</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">템플릿 명 </th>
+                        <td colspan="3">
+                            <span>삼성카드 이용대금 안내표</span>
+                        </td>
+                    </tr>                
+                        
+                    <!--  파일실행형 일경우  -->
+                    <tr class="tr-attch-file">
+                        <th scope="row">파일첨부형태</th>
+                        <td>
+                            <span>메일 본문 다운로드</span>
+                        </td>
+                        <th scope="row">첨부파일종류  </th>
+                        <td>
+                            <span>exe</span>
+                        </td>
+                    </tr>
+                    <tr class="tr-attch-file">
+                        <th scope="row">첨부파일아이콘</th>
+                        <td>
+                            <span>docx</span>
+                        </td>
+                        <th scope="row">첨부파일명 </th>
+                        <td>
+                               <span>첨부파일명</span>
+                        </td>
+                    </tr>
+                    <tr class="tr-attch-file">
+                        <th scope="row">파일압축여부 </th>
+                        <td>
+                            <span>압축함(파일명)</span>
+                        </td>
+                        <th scope="row">화면잠김사용</th>
+                        <td>
+                            <span>사용(공용 비밀번호, 악성파일에 포함)</span>
+                        </td>
+                    </tr>
+
+                    <!--  // 파일 실행형 일경우  -->
+                </tbody>
+            </table>
+            
+            
+            <h3 class="sub-s-tit">템플릿 내용</h3>
+            <table class="template-box botder-top-1 write-type">
+                <colgroup>
+                    <col style="width:18%"> 
+                    <col style="width:82%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">보낸 사람 이름</th>
+                        <td>
+                            <span>고경수</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">보낸 이메일</th>
+                        <td>
+                            <span>sungwoo.park@cyberone.kr</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이메일 제목</th>
+                        <td>
+                            <span>안녕하세요 삼성카드입니다</span>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <div class="pop-temp-view">
+                <!-- 훈련 -->
+                <input type="radio" class="radio-tab" id="temp-view01" name="temp-view" checked=""><label for="temp-view01">훈련템플릿</label>
+                <div class="pop-temp-frame">11
+                       <iframe id="" frameborder="0" allowtransparency="true" title=""></iframe>
+                </div>
+                <!-- // 훈련-->
+    
+                <!-- 중간 class= authType :: 미노출시 dom 삭제 -->
+                <input type="radio" class="radio-tab authType" id="temp-view02" name="temp-view"><label for="temp-view02" class="authType">중간템플릿</label>
+                <div class="pop-temp-frame">22
+                   <iframe id="" frameborder="0" allowtransparency="true" title=""></iframe>
+                </div>
+                <!-- // 중간 -->
+                
+                <!-- 결과 -->
+                <input type="radio" class="radio-tab" id="temp-view03" name="temp-view"><label for="temp-view03">결과템플릿</label>
+                <div class="pop-temp-frame">33
+                    <iframe id="" frameborder="0" allowtransparency="true" title=""></iframe>
+                </div>
+                <!-- // 결과 -->
+            </div>
+        </div>
+        <!-- // 템플릿 -->
+    </div>
+</div>  
+<!-- 메일 템플릿 보기 팝업 mail-temp-pop -->
+
+
+<div id="wrap">
+	<div id="left-menu">
+		<a href="" class="logo"><img src="../img/logo.png"></a>
+		<div class="user">
+			<img src="../img/user-img.png">
+			<p>관리자<a href=""><img src="../img/icon-setting.png"></a></p>
+			administrator
+			<div class="user-depth2 depth2">
+				<a href="">내정보</a>
+				<a href="">도움말</a>
+				<a href="">로그아웃</a>
+			</div>
+		</div>
+		<ul>
+			<li class="smenu01"><a href=""><img src="../img/left-menu-icon01.png">훈련시작</a></li>
+			<li><a href="" class="active"><img src="../img/left-menu-icon02.png">결과보기</a></li>
+			<li><a href=""><img src="../img/left-menu-icon03.png">대상자 관리</a></li>
+			<li><a href="" class="setting-hover"><img src="../img/left-menu-icon04.png">설정</a>
+
+				<div class="settin-depth2 depth2">
+					<a href="">내정보</a>
+					<a href="">계정관리</a>
+					<a href="">템플릿관리</a>
+					<a href="">SMTP 설정</a>
+					<a href="">도움말</a>
+					<a href="">로그아웃</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="contents-wrap-sub">
+		<div id="top-tit">
+			<div class="sub-tit"><img src="../img/sub-tit02-icon.png">결과보기</div>
+			<div class="path"><img src="../img/icon-home.png" class="home"><img src="../img/icon-arr.png">결과보기<img src="../img/icon-arr.png">훈련상세보기</div>
+		</div>
+		<div id="sub-contents">
+			<div class="sub-wrap">
+				<div class="content-wrap tab02-bottom">
+					<div class="tab02">
+						<ul>
+							<li><a href="" class="active">훈련 상세보기</a></li>
+							<li><a href="" >사용자 상세보기</a></li>
+						</ul>
+					</div>
+					<div class="user-view-box">
+						<p>2분기 이메일 훈련</p>
+						<ul>
+							<li><p><img src="../img/user-vier-icon01.png">총 훈련기간</p><span class="num-txt">2020. 01.26 ~ 2020. 03. 03</span></li>
+							<li><p><img src="../img/user-vier-icon02.png">완료율</p><span  class="num-txt">100%</span></li>
+							<li><p><img src="../img/user-vier-icon03.png">사용자</p><span class="op74">1500명</span></li>
+							<li><p><img src="../img/user-vier-icon04.png">감염</p><span>19명 ( 12% )</span></li>
+						</ul>
+					</div>
+
+				<!-- psw 마크업 수정 -->
+				<div class="training-view-top st2">
+					<div class="top-con">
+						<div class="left">
+							<div class="mtit">경기,인천 지사 훈련</div>
+							<ul>
+								<li><img src="../img/main-icon01.png"><span>2020. 02.26 ~ 2020. 03. 13</span></li>
+								<li><img src="../img/main-icon02.png">총 훈련 인원  <em>100명</em></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="bottom-con">
+						<div class="right">
+							<div class="info-box">
+								<div class="mtit">훈련유형</div>
+								<ul>
+									<li class="blue01">링크타입</li>
+									<li class="blue02">랜섬웨어</li>
+									<li class="blue03">정보유출</li>
+								</ul>
+							</div>
+							<div class="box">
+								<div class="one-graph " id="main_grp_01"></div>
+								<script>
+									var graphData = [40, 35, 25];
+									graph_01(graphData, 'main_grp_01', 'st1');
+								</script>
+								<!-- <img src="../img/@thumnail.png"> -->
+							</div>
+						</div>
+
+						<ul>
+							<!--li><p>훈련대상자</p><div class="box">
+ 								<div class="flex-wrapper">
+								   <div class="single-chart">
+									<svg viewBox="0 0 36 36" class="circular-chart bg01">
+									  <path class="circle-bg"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <path class="circle"
+										stroke-dasharray="80, 100"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <text x="18" y="18.35" class="percentage">80%</text>
+									  <text x="18" y="24.35" class="percentage2">80명</text>
+									</svg>
+								  </div>
+								</div>
+							
+ 							 <img src="../img/@thumnail01.png"></div>li-->
+							<li>
+								<p>이메일 열람</p>
+ 								<div class="flex-wrapper">
+								   <div class="single-chart">
+									<svg viewBox="0 0 36 36" class="circular-chart bg01">
+									  <path class="circle-bg"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <path class="circle"
+										stroke-dasharray="70, 100"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <text x="18" y="18.35" class="percentage">70%</text>
+									  <text x="18" y="24.35" class="percentage2">70명</text>
+									</svg>
+								  </div>
+								</div>
+							</li>
+
+							<li><p>OO TYPE</p>
+ 								<div class="flex-wrapper">
+								   <div class="single-chart">
+									<svg viewBox="0 0 36 36" class="circular-chart bg02">
+									  <path class="circle-bg"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <path class="circle"
+										stroke-dasharray="75, 100"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <text x="18" y="18.35" class="percentage">75%</text>
+									  <text x="18" y="24.35" class="percentage2">75명</text>
+									</svg>
+								  </div>
+								</div>
+ 							</li>
+							<li><p>감염</p>
+ 								<div class="flex-wrapper">
+								   <div class="single-chart">
+									<svg viewBox="0 0 36 36" class="circular-chart bg03">
+									  <path class="circle-bg"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <path class="circle"
+										stroke-dasharray="75, 100"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <text x="18" y="18.35" class="percentage">75%</text>
+									  <text x="18" y="24.35" class="percentage2">75명</text>
+									</svg>
+								  </div>
+								</div>
+							</li>
+							<li><p>교육 대상자</p>
+								<div class="flex-wrapper">
+								   <div class="single-chart">
+									<svg viewBox="0 0 36 36" class="circular-chart bg04">
+									  <path class="circle-bg"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <path class="circle"
+										stroke-dasharray="75, 100"
+										d="M18 2.0845
+										  a 15.9155 15.9155 0 0 1 0 31.831
+										  a 15.9155 15.9155 0 0 1 0 -31.831"
+									  />
+									  <text x="18" y="18.35" class="percentage">75%</text>
+									  <text x="18" y="24.35" class="percentage2">75명</text>
+									</svg>
+								  </div>
+								</div>
+							</li>
+
+							<li><p>신고자</p>
+								<div class="flex-wrapper">
+									<div class="single-chart">
+										<svg viewBox="0 0 36 36" class="circular-chart bg05">
+											<path class="circle-bg"
+												d="M18 2.0845
+												a 15.9155 15.9155 0 0 1 0 31.831
+												a 15.9155 15.9155 0 0 1 0 -31.831"
+											/>
+											<path class="circle"
+												stroke-dasharray="25, 100"
+												d="M18 2.0845
+												a 15.9155 15.9155 0 0 1 0 31.831
+												a 15.9155 15.9155 0 0 1 0 -31.831"
+											/>
+											<text x="18" y="18.35" class="percentage">25%</text>
+											<text x="18" y="24.35" class="percentage2">25명</text>
+										</svg>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- // psw 마크업 수정 -->
+
+					<a name="go01"></a>
+					<div class="tab">
+						<ul>
+							<li><a href="#go01" class="active">메일 정보</a></li>
+							<li><a href="#go02" >부서별 훈련 상세</a></li>
+							<li><a href="#go03" >팀별 훈련 상세</a></li>
+						</ul>
+					</div>
+
+					<!--  swiper-container -->
+					<div class="swiper-container">
+						<ul class="swiper-wrapper training-view-box">
+							<li class="swiper-slide">
+								<strong>경기, 인천 지사 훈련<b>훈련 대상자 : <span>100</span>명</b></strong>
+								<button type="button" class="mail-temp tooltip-info"><i class="tooltip-txt">메일 템플릿 보기</i></button>
+								<span class="label tooltip-info ico-type01"><i class="tooltip-txt">링크유형</i></span><!-- ico class :: ico-type01 링크유형 / ico-type02 랜섬웨어 / ico-type03 정보유출-->
+								
+								<div class="graph-con">
+									<ul>
+										<li><p>이메일 열람</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg01">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="70, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">70%</text>
+												<text x="18" y="24.35" class="percentage2">70명</text>
+												</svg>
+											</div>
+											</div>
+											<!-- <img src="../img/@thumnail02.png"> -->
+										</div></li>
+										<li><p>감염</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg02">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+											</div>
+											</div>
+
+										<!-- <img src="../img/@thumnail04.png"> --></div></li>
+										<li><p>교육 대상자</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg03">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+											</div>
+											</div>
+										<!-- <img src="../img/@thumnail05.png"> --></div></li>
+
+										<li><!-- 해당없음시 path-none 추가-->
+											<p>신고자</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg04">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+												
+											</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<strong>경기, 인천 지사 훈련<b>훈련 대상자 : <span>100</span>명</b></strong>
+								<button type="button" class="mail-temp tooltip-info"><i class="tooltip-txt">메일 템플릿 보기</i></button>
+								<span class="label tooltip-info ico-type02"><i class="tooltip-txt">랜섬웨어</i></span>
+								
+								<div class="graph-con">
+									<ul>
+										<li><p>이메일 열람</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg01">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="70, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">70%</text>
+												<text x="18" y="24.35" class="percentage2">70명</text>
+												</svg>
+											</div>
+											</div>
+											<!-- <img src="../img/@thumnail02.png"> -->
+										</div></li>
+										<li><p>감염</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg02">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+											</div>
+											</div>
+
+										<!-- <img src="../img/@thumnail04.png"> --></div></li>
+										<li><p>교육 대상자</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg03">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+											</div>
+											</div>
+										<!-- <img src="../img/@thumnail05.png"> --></div></li>
+
+										<li><!-- 해당없음시 path-none 추가-->
+											<p>신고자</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg04">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+												
+											</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<strong>경기, 인천 지사 훈련<b>훈련 대상자 : <span>100</span>명</b></strong>
+								<button type="button" class="mail-temp tooltip-info"><i class="tooltip-txt">메일 템플릿 보기</i></button>
+								<span class="label tooltip-info ico-type03"><i class="tooltip-txt">랜섬웨어</i></span>
+								
+								<div class="graph-con">
+									<ul>
+										<li><p>이메일 열람</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg01">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="70, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">70%</text>
+												<text x="18" y="24.35" class="percentage2">70명</text>
+												</svg>
+											</div>
+											</div>
+											<!-- <img src="../img/@thumnail02.png"> -->
+										</div></li>
+										<li><p>감염</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg02">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+											</div>
+											</div>
+
+										<!-- <img src="../img/@thumnail04.png"> --></div></li>
+										<li><p>교육 대상자</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg03">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+											</div>
+											</div>
+										<!-- <img src="../img/@thumnail05.png"> --></div></li>
+
+										<li><!-- 해당없음시 path-none 추가-->
+											<p>신고자</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg04">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+												
+											</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<strong>경기, 인천 지사 훈련<b>훈련 대상자 : <span>100</span>명</b></strong>
+								<button type="button" class="mail-temp tooltip-info"><i class="tooltip-txt">메일 템플릿 보기</i></button>
+								<span class="label tooltip-info ico-type03"><i class="tooltip-txt">정보유출</i></span>
+								
+								<div class="graph-con">
+									<ul>
+										<li><p>이메일 열람</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg01">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="70, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">70%</text>
+												<text x="18" y="24.35" class="percentage2">70명</text>
+												</svg>
+											</div>
+											</div>
+											<!-- <img src="../img/@thumnail02.png"> -->
+										</div></li>
+										<li><p>감염</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg02">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+											</div>
+											</div>
+
+										<!-- <img src="../img/@thumnail04.png"> --></div></li>
+										<li><p>교육 대상자</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg03">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+											</div>
+											</div>
+										<!-- <img src="../img/@thumnail05.png"> --></div></li>
+
+										<li><!-- 해당없음시 path-none 추가-->
+											<p>신고자</p><div class="box">
+											<div class="flex-wrapper">
+											<div class="single-chart">
+												<svg viewBox="0 0 36 36" class="circular-chart bg04">
+												<path class="circle-bg"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<path class="circle"
+													stroke-dasharray="75, 100"
+													d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831"
+												/>
+												<text x="18" y="18.35" class="percentage">75%</text>
+												<text x="18" y="24.35" class="percentage2">75명</text>
+												</svg>
+												
+											</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+
+						<div class="swiper-pagination"></div><!-- 인디게이터 -->
+
+						<button type="button" class="swiper-button-prev" title="이전 슬라이드"></button>
+						<button type="button" class="swiper-button-next" title="다음 슬라이드"></button>
+    					
+					</div>
+					<!-- // swiper-container -->
+
+
+					<a name="go02"></a>
+					<div class="tab">
+						<ul>
+							<li><a href="#go01">메일 정보</a></li>
+							<li><a href="#go02"  class="active">부서별 훈련 상세</a></li>
+							<li><a href="#go03" >팀별 훈련 상세</a></li>
+						</ul>
+					</div>
+					<table class="template-box write-type04">
+						<colgroup>
+							<col style="width:12%">
+							<col style="width:12%">
+							<col style="width:12%">
+							<col style="width:34%">
+							<col style="width:10%" span="3">
+						</colgroup>
+						
+						<thead>
+							<tr>
+								<th scope="col">부서</th>
+								<th scope="col" class="txt-center">훈련대상자</th>
+								<th scope="col" class="txt-center">메일 열람</th>
+								<th scope="col" class="txt-center">유도행위 수행</th>
+								<th scope="col" class="txt-center">감염</th>
+								<th scope="col" class="txt-center">신고</th>
+								<th scope="col" class="txt-center">교육 대상자</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td>기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+									<strong class="icon-ps access tooltip-info">5<i class="tooltip-txt">피싱사이트 접속 5</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							<tr>
+								<td>기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							<tr>
+								<td>기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+									<strong class="icon-ps down tooltip-info">10<i class="tooltip-txt">악성파일 다운 10</i></strong>
+									<strong class="icon-ps access tooltip-info">5<i class="tooltip-txt">피싱사이트 접속 5</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							<tr>
+								<td>기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+									<strong class="icon-ps access tooltip-info">5<i class="tooltip-txt">피싱사이트 접속 5</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							<tr>
+								<td>기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							<tr>
+								<td>기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+									<strong class="icon-ps down tooltip-info">10<i class="tooltip-txt">악성파일 다운 10</i></strong>
+									<strong class="icon-ps access tooltip-info">5<i class="tooltip-txt">피싱사이트 접속 5</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							
+						</tbody>
+					</table>
+
+					<a name="go03"></a>
+					<div class="tab">
+						<ul>
+							<li><a href="#go01" >메일 정보</a></li>
+							<li><a href="#go02" >부서별 훈련 상세</a></li>
+							<li><a href="#go03" class="active">팀별 훈련 상세</a></li>
+						</ul>
+					</div>
+					<div class="user-search-box">
+						
+							<div class="Top_select" style="width:107px">
+								<a href="javascript:;" class="Top_select_kind">부서</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+									<a href="javascript:;">선택4</a>
+								</div>
+							</div>
+							
+							<div class="Top_select" style="width:107px">
+								<a href="javascript:;" class="Top_select_kind">직급</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+									<a href="javascript:;">선택4</a>
+								</div>
+							</div>
+							
+							<div class="Top_select">
+								<a href="javascript:;" class="Top_select_kind">태그(멀티선택)</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+									<a href="javascript:;">선택4</a>
+								</div>
+							</div>
+						<div class="box-search">
+							<input type="text" name="" style="width:210px">
+							<input type="button" value="" onclick="">
+						</div>
+						<div class="chk-type02">
+							<input name="com_booth" class="chk1" id="chk-type02" type="checkbox" value="Y"><i></i><label for="chk-type02">메일 알람</label>
+						</div>
+						<div class="chk-type02">
+							<input name="com_booth" class="chk1" id="chk-type0201" type="checkbox" value="Y"><i></i><label for="chk-type0201">OO타입</label>
+						</div>
+						<div class="chk-type02">
+							<input name="com_booth" class="chk1" id="chk-type0202" type="checkbox" value="Y"><i></i><label for="chk-type0202">감염</label>
+						</div>
+						<a href="" class="btn-line"><img src="../img/icon-ex.png">엑셀저장</a>
+
+					</div>
+					<table class="template-box write-type04">
+						<colgroup>
+							<col style="width:10%">
+							<col style="width:10%">
+							<col style="width:12%">
+							<col style="width:12%">
+							<col style="width:32%">
+							<col style="width:8%" span="3">
+						</colgroup>
+						
+						<thead>
+							<tr>
+								<th scope="col">부서</th>
+								<th scope="col">팀</th>
+								<th scope="col" class="txt-center">훈련대상자</th>
+								<th scope="col" class="txt-center">메일 열람</th>
+								<th scope="col" class="txt-center">유도행위 수행</th>
+								<th scope="col" class="txt-center">감염</th>
+								<th scope="col" class="txt-center">신고</th>
+								<th scope="col" class="txt-center">교육 대상자</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td>기획부서</td>
+								<td>이커머스기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+									<strong class="icon-ps down tooltip-info">10<i class="tooltip-txt">악성파일 다운 10</i></strong>
+									<strong class="icon-ps access tooltip-info">5<i class="tooltip-txt">피싱사이트 접속 5</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							<tr>
+								<td>기획부서</td>
+								<td>이커머스기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+									<strong class="icon-ps down tooltip-info">10<i class="tooltip-txt">악성파일 다운 10</i></strong>
+									<strong class="icon-ps access tooltip-info">5<i class="tooltip-txt">피싱사이트 접속 5</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							<tr>
+								<td>기획부서</td>
+								<td>이커머스기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+									<strong class="icon-ps down tooltip-info">10<i class="tooltip-txt">악성파일 다운 10</i></strong>
+									<strong class="icon-ps access tooltip-info">5<i class="tooltip-txt">피싱사이트 접속 5</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							<tr>
+								<td>기획부서</td>
+								<td>이커머스기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+									<strong class="icon-ps down tooltip-info">10<i class="tooltip-txt">악성파일 다운 10</i></strong>
+									<strong class="icon-ps access tooltip-info">5<i class="tooltip-txt">피싱사이트 접속 5</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+							<tr>
+								<td>기획부서</td>
+								<td>이커머스기획팀</td>
+								<td class="txt-center"><strong class="icon-ps candidate tooltip-info">12명</strong></td>
+								<td class="txt-center"><strong class="icon-ps mail tooltip-info">10<i class="tooltip-txt">메일열람 10</i></strong></td>
+								<td class="txt-center">
+									<strong class="icon-ps move tooltip-info">6<i class="tooltip-txt">악성링크 이동 6</i></strong>
+									<strong class="icon-ps down tooltip-info">10<i class="tooltip-txt">악성파일 다운 10</i></strong>
+									<strong class="icon-ps access tooltip-info">5<i class="tooltip-txt">피싱사이트 접속 5</i></strong>
+								</td>
+								<td class="txt-center"><strong class="icon-ps infection tooltip-info">6<i class="tooltip-txt">감염 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps report tooltip-info">6<i class="tooltip-txt">신고 6</i></strong></td>
+								<td class="txt-center"><strong class="icon-ps training tooltip-info">2<i class="tooltip-txt">교육 대상자 2</i></strong></td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>

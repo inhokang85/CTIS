@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<title>세임</title>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/layout.css">
+<link rel="stylesheet" href="http://www.nbo.or.kr/editor/css/editor.css" type="text/css" charset="utf-8"/>
+	<script src="http://www.nbo.or.kr/editor/js/editor_loader.js?environment=development" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css" />
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+		// (function($){
+		// 	$(window).on("load",function(){
+		// 		$("#contents-wrap-sub #sub-contents").mCustomScrollbar({theme:"dark", axis:"y" });
+		// 	});
+		// })(jQuery)
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="left-menu">
+		<a href="" class="logo"><img src="../img/logo.png"></a>
+		<div class="user">
+			<img src="../img/user-img.png">
+			<p>관리자<a href=""><img src="../img/icon-setting.png"></a></p>
+			administrator
+			<div class="user-depth2 depth2">
+				<a href="">내정보</a>
+				<a href="">도움말</a>
+				<a href="">로그아웃</a>
+			</div>
+		</div>
+		<ul>
+			<li class="smenu01"><a href=""><img src="../img/left-menu-icon01.png">훈련시작</a></li>
+			<li><a href=""><img src="../img/left-menu-icon02.png">결과보기</a></li>
+			<li><a href=""><img src="../img/left-menu-icon03.png">대상자 관리</a></li>
+			<li><a href="" class="setting-hover"><img src="../img/left-menu-icon04.png">설정</a>
+				
+				<div class="settin-depth2 depth2">
+					<a href="">내정보</a>
+					<a href="">계정관리</a>
+					<a href="">템플릿관리</a>
+					<a href="">SMTP 설정</a>
+					<a href="">도움말</a>
+					<a href="">로그아웃</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="contents-wrap-sub">
+		<div id="top-tit">
+			<div class="sub-tit"><img src="../img/sub-tit-icon.png">훈련시작</div>
+			<div class="path"><img src="../img/icon-home.png" class="home"><img src="../img/icon-arr.png">훈련시작<img src="../img/icon-arr.png">검토 및 발송</div>
+		</div>
+		<div id="sub-contents">		
+			<div class="sub-wrap">
+				<div class="content-wrap">
+					<div class="step bg06">
+						<ul>
+							<li class="txt40"><img src="../img/step-icon01-40.png">시작하기</li>
+							<li class="txt40"><img src="../img/step-icon02-40.png">템플릿 선택</li>
+							<li class="txt40"><img src="../img/step-icon03-40.png">메일 설정</li>
+							<li class="txt40"><img src="../img/step-icon04-40.png">대상자 선택</li>
+							<li class="txt40"><img src="../img/step-icon05-40.png">교육 선택</li>
+							<li><img src="../img/step-icon06.png">검토 및 발송</li>
+						</ul>
+					</div>
+					<div class="sub-m-tit">검토 및 발송</div>
+					<div class="send-box">
+						<img src="../img/send-illust.png">
+						<div class="txt"><b>훈련 메일을 발송합니다.</b>훈련 정보를 입력사항을 검토 후<br>예약 실행 및 즉시 실행이 가능합니다.</div>
+					</div>
+					<table class="template-box write-type last-bd-none">
+						<tr>
+							<th>훈련 정보</th>
+							<td>
+								<div class="con-box-type01">
+									<ul>
+										<li>훈련명</li>
+										<li>악성메일 훈련 #1</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="con-box-type01">
+									<ul>
+										<li>훈련대상</li>
+										<li>250명</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="con-box-type01">
+									<ul>
+										<li>훈련 템플릿</li>
+										<li><span>템플릿1</span><span>템플릿1</span><span>템플릿1</span></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>훈련 예약</th>
+							<td>
+								<div class="cal-box">
+									<input type="text" name="" style="width:125px">
+									<input type="button" value="" onclick="" class="time_date">
+								</div>
+								&nbsp; ~ &nbsp;
+								
+								<div class="cal-box mr25">
+									<input type="text" name="" style="width:125px">
+									<input type="button" value="" onclick=""  class="time_date01">
+								</div>
+								
+								<div class="chk-type01 mr30">
+									<input name="com_booth" class="chk1" id="right-chk01" type="radio" value="Y"><i></i><label for="right-chk01">예약 실행</label>
+								</div>
+								<div class="chk-type01">
+									<input name="com_booth" class="chk1" id="right-chk0102" type="radio" value="Y"><i></i><label for="right-chk0102">즉시 실행</label>
+								</div>
+							
+							</td>
+						</tr>
+						<tr>
+							<th>발송 방법</th>
+							<td>대상자의  
+								
+							<div class="Top_select" style="width:100px">
+								<a href="javascript:;" class="Top_select_kind">20%</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+								</div>
+							</div> 를 
+							<div class="Top_select" style="width:100px">
+								<a href="javascript:;" class="Top_select_kind">1시간</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+								</div>
+							</div>
+							 마다 발송합니다.</td>
+						</tr>
+
+						<!-- 신고하기 추가 -->
+						<tr>
+							<th scope="row">신고하기</th>
+							<td>
+								<div class="report-radioBox">
+									<input type="radio" class="new-radio use-block" id="report-top01" name="report-radio01" checked><label for="report-top01">사용</label><!-- id와 for 연결 -->
+
+									<!-- 사용(use-block) 선택시 css로 활성화처리 -->
+									<div class="">
+										<input type="radio" class="new-radio" id="report-btm01" name="report-radio02" checked><label for="report-btm01">텍스트</label>
+										<input type="radio" class="new-radio" id="report-btm02" name="report-radio02"><label for="report-btm02">이미지</label>
+										<input type="radio" class="new-radio" id="report-btm03" name="report-radio02"><label for="report-btm03">사용자 정의</label>
+									</div>
+
+									<input type="radio" class="new-radio" id="report-top02" name="report-radio01"><label for="report-top02">사용 안함</label>
+								</div>
+							</td>
+						</tr>
+						<!-- // 신고하기 추가 -->
+					</table>
+
+					<div class="right-btn mb50">
+						<a href="" class="btn-pre"><img src="../img/btn-arr-left.png">뒤로</a>
+						<a href="" class="btn-next">다음<img src="../img/btn-arr-right.png"></a>
+					</div>
+
+						
+									<div class="pop_calendar cal01">
+										<div class="top_calendar">
+											<span>October 2019</span>
+											<a href="javascript:;" class="prev_month"><img src="../img/path.png"></a>
+											<a href="javascript:;" class="next_month on"><img src="../img/path.png"></a>
+										</div>
+										<div class="calendar_tb">
+											<table>
+												<thead>
+												<tr>
+													<th>Mon</th>
+													<th>Tue</th>
+													<th>Wed</th>
+													<th>Thu</th>
+													<th>Fri</th>
+													<th>Sat</th>
+													<th>Sun</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr><td colspan="7" class="bline"></td></tr>
+												<tr>
+													<td class="gone">28</td>
+													<td class="gone">29</td>
+													<td class="gone">30</td>
+													<td class="gone">31</td>
+													<td>1</td>
+													<td>2</td>
+													<td>3</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>5</td>
+													<td>6</td>
+													<td>7</td>
+													<td>8</td>
+													<td>9</td>
+													<td>10</td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>12</td>
+													<td>13</td>
+													<td>14</td>
+													<td>15</td>
+													<td>16</td>
+													<td>17</td>
+												</tr>
+												<tr>
+													<td>18</td>
+													<td><span>19</span></td>
+													<td>20</td>
+													<td><strong class="point_bg">21</strong></td>
+													<td>22</td>
+													<td>23</td>
+													<td>24</td>
+												</tr>
+												<tr>
+													<td>25</td>
+													<td>26</td>
+													<td>27</td>
+													<td>28</td>
+													<td>29</td>
+													<td>30</td>
+													<td>31</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									
+						
+									<div class="pop_calendar cal02" style="left:356px">
+										<div class="top_calendar">
+											<span>October 2019</span>
+											<a href="javascript:;" class="prev_month"><img src="../img/path.png"></a>
+											<a href="javascript:;" class="next_month on"><img src="../img/path.png"></a>
+										</div>
+										<div class="calendar_tb">
+											<table>
+												<thead>
+												<tr>
+													<th>Mon</th>
+													<th>Tue</th>
+													<th>Wed</th>
+													<th>Thu</th>
+													<th>Fri</th>
+													<th>Sat</th>
+													<th>Sun</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr><td colspan="7" class="bline"></td></tr>
+												<tr>
+													<td class="gone">28</td>
+													<td class="gone">29</td>
+													<td class="gone">30</td>
+													<td class="gone">31</td>
+													<td>1</td>
+													<td>2</td>
+													<td>3</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>5</td>
+													<td>6</td>
+													<td>7</td>
+													<td>8</td>
+													<td>9</td>
+													<td>10</td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>12</td>
+													<td>13</td>
+													<td>14</td>
+													<td>15</td>
+													<td>16</td>
+													<td>17</td>
+												</tr>
+												<tr>
+													<td>18</td>
+													<td><span>19</span></td>
+													<td>20</td>
+													<td><strong class="point_bg">21</strong></td>
+													<td>22</td>
+													<td>23</td>
+													<td>24</td>
+												</tr>
+												<tr>
+													<td>25</td>
+													<td>26</td>
+													<td>27</td>
+													<td>28</td>
+													<td>29</td>
+													<td>30</td>
+													<td>31</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+				</div>
+
+
+			
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+
+
+	
+
+
+<script type="text/javascript">
+$(document).ready(function(){	
+	$(".time_date").click(function (){
+		$(".pop_calendar.cal01").fadeToggle("fast");
+		$(".pop_calendar.cal02").fadeOut("fast");
+	});
+	$(".pop_calendar.cal02 td").click(function (){
+		$(".pop_calendar.cal01").fadeOut("fast");
+	});
+	$(".time_date01").click(function (){
+		$(".pop_calendar.cal02").fadeToggle("fast");
+		$(".pop_calendar.cal01").fadeOut("fast");
+	});
+	$(".pop_calendar.cal02 td").click(function (){
+		$(".pop_calendar.cal02").fadeOut("fast");
+	});
+});
+
+</script>
+</body>
+</html>

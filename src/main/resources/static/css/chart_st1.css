@@ -1,0 +1,183 @@
+/*.training-view-top.st2 .bottom-con li:last-child{padding-right:18px}*/
+
+.flex-wrapper {
+   
+}
+
+.single-chart {
+  width:100%;height:96px;margin:0 auto
+}
+
+.circular-chart {
+  display: block;
+	max-width: 100%;
+  max-height: 96px;
+}
+
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 1;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+
+
+
+.circular-chart.bg01 .circle {
+  stroke: #b0bacd;
+}
+.circular-chart.bg02 .circle {
+  stroke: #a1e7f7;
+}
+.circular-chart.bg03 .circle {
+  stroke: #dee87e;
+}
+.circular-chart.bg04 .circle {
+  stroke: #a1ece1;
+}
+.circular-chart.bg05 .circle {
+  stroke: #a6ceff;
+}
+.percentage {
+  fill: #333333;
+  font-family: 'Montserrat';
+  font-size: .4em;
+  font-weight:bold;
+  text-anchor: middle;
+}
+.percentage2 {
+  fill: #a5abb4;
+  font-size: .3em;
+  font-weight:normal;
+  text-anchor: middle;
+}
+
+
+
+
+
+
+/* 더블 그래프  */
+.chart2-box{position:relative;padding-left:35px;}
+.chart2-box .txt-box{position:absolute;left:0;top:0;font-size:12px}
+.chart2-box .txt-box .txt1.st1{color:#dcb05b}
+.chart2-box .txt-box .txt1.st2{color:#6dc3b5}
+.chart2-box .txt-box .txt2{margin-left:5px}
+.single-chart2 {
+  width:121px;height:121px;margin:0 auto;position:relative;
+}
+
+.circular-chart2 {
+  display: block;
+	max-width: 100%;
+	max-height: 100%;
+ }
+
+.circle-bg2 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #fff;
+  stroke-width: 2.5;
+}
+
+.circle2 {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke : #edc26f;
+  animation: progress2 1s ease-out forwards;
+}
+
+
+.circular-chart2-2 {position:absolute;left:15%;top:15%;bottom:0;right:0;display: block;max-width: 70%;max-height: 70%}
+
+.circle-bg2-2 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #fff;
+  stroke-width: 3.5;
+}
+
+.circle2-2 {
+  fill: none;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke : #edc26f;
+  animation: progress2 1s ease-out forwards;
+}
+
+@keyframes progress2 {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+
+.circular-chart2-2  .circle2-2 {
+  stroke: #81c0b6;
+}
+
+
+
+
+/* 도넛 그래프 글자속성 */
+.pie_1 text {fill:#fff}
+.pie_1 text.sm {font-size:10px !important; display:none}
+/*.pie_1:nth-child(2) .sm {text-anchor:end}*/
+.one-graph{}
+.one-graph > svg{box-shadow: 4px 3px 5px 0px rgba(149, 165, 211, 0.3);border-radius:100%;background:url('../img/@thumnail_bg.png') center center no-repeat;background-size:100% 100%}
+
+
+
+/* 막대 그래프 */
+/*.gp-st-bar {background:url('../img/@thumnail06_bg.png') center top no-repeat;width:86px;height:101px;position:relative;overflow:hidden;padding:0 0 1px 36px;box-sizing:border-box}
+
+.gp-st-bar .inner-box{float:left;padding:0 5px 0 5px;width:8px;height:100%;position:relative;}
+.gp-st-bar .inner-box .line-box{float:left;height:100%;;position:relative;box-sizing:border-box; }
+.gp-st-bar .inner-box .line-box .line-bar{position:absolute;left:0;bottom:0;height:100%;top:100%;background:#edc26f;width:8px;border-top-left-radius:8px;border-top-right-radius:8px;animation: lineInserted 1s ease-out forwards;}
+.gp-st-bar .inner-box .line-box .num-box{color:#dcb05b;position:absolute;left:-5px;top:-15px;width:18px;font-size:10px;text-align:center;animation: lineInserted2 1.5s ease-out forwards;}
+
+.gp-st-bar .inner-box.st2 .line-box .line-bar {background:#81c0b6}
+.gp-st-bar .inner-box.st2 .line-box .num-box{color:#6fc0b3}
+
+.gp-st-bar .gp-y-box{position:absolute;left:-25px;top:0;bottom:0;width:40px;height:100%;box-sizing:border-box; }
+.gp-st-bar .gp-y-box:after{content:'';display:block;clear:both}
+.gp-st-bar .gp-y-box .y-num-box{color:#aeb4bf;font-size:10px;text-align:right;width:41px;float:left;vertical-align:middle;line-height:100%}
+.gp-st-bar .gp-y-box .y-num-box.zero{position:relative;}
+.gp-st-bar .gp-y-box .y-num-box.zero span{position:absolute;left:0;bottom:0;right:0;vertical-align:bottom;line-height:1;display:block;text-align:right}
+
+
+ @keyframes lineInserted {
+     from {
+       top: 100%;
+     }
+     to {
+       top: 0;
+     }
+}
+ 
+@keyframes lineInserted2 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}*/

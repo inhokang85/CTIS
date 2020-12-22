@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>정보 입력 - 신고하기</title>
+	<style>
+		.layerPop_wrap {position:fixed;left:0;top:0;background: rgba(0,0,0,0.7);width:100%;height:100%;z-index:99999999}
+		.layerPop_wrap * {margin:0;padding:0;list-style:none;text-decoration:none;color:#333;font-family:'맑은 고딕','sans-serif','돋움'}
+		.layerPop_wrap .reportWrite {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);width:500px;background:#fff;border-radius:15px;padding:40px}
+		.layerPop_wrap .reportWrite ::placeholder,.layerPop_wrap .reportWrite ::-ms-input-placeholder {color:#b4b6c1}
+		.layerPop_wrap .reportWrite h2 {margin-bottom:25px;font-size:22px}
+		.layerPop_wrap .reportWrite ul li {display:table;width:100%}
+		.layerPop_wrap .reportWrite ul li+li {margin-top:8px}
+		.layerPop_wrap .reportWrite ul li > * {display:table-cell;width:100%;box-sizing:border-box;}
+		.layerPop_wrap .reportWrite ul li label {width:25%;font-weight:bold;vertical-align:top;padding-top:8px;font-size:14px;color:#333}
+		.layerPop_wrap .reportWrite ul li input {font-size:14px;border:1px solid #ddd;height:42px;line-height:42px;padding:0 5px 0 10px;box-sizing:border-box;vertical-align:middle;background:#fff;border-radius:5px;outline:none}
+		.layerPop_wrap .reportWrite ul li textarea {width:100%;padding:10px;box-sizing:border-box; border:1px solid #ddd;font-size:14px;border-radius:5px;outline:none}
+		.reportWrite ul li input:focus,.reportWrite ul li input:hover,.reportWrite ul li textarea:focus,.reportWrite ul li textarea:hover {border:1px solid #5974f9;}
+		.layerPop_wrap .btnBox {margin-top:20px;text-align:center}
+		.layerPop_wrap .btnBox a {display:inline-block;height:44px;line-height:44px;color:#fff;font-size:14px;padding:0 20px;font-weight:500;border-radius:4px;margin-left:3px;cursor:pointer;min-width:65px;text-align:center;}
+		.layerPop_wrap .btn-gray {background:#a1acbd}
+		.layerPop_wrap .btn-blue {background:#4873ff}
+	</style>
+</head>
+<body>
+	<div class="layerPop_wrap">
+		<div class="reportWrite">
+			<h2>신고 정보 입력</h2>
+	
+			<ul>
+				<li>
+					<label for="report_wr01">페이지 타이틀</label>
+					<input type="text" id="report_wr01" name="" title="페이지 타이틀" placeholder="예) 2020년 2분기 OO공사 신고하기 페이지">
+				</li>
+				<li>
+					<label for="report_wr02">이메일</label>
+					<input type="text" id="report_wr02" name="" title="이메일" placeholder="">
+				</li>
+				<li>
+					<label for="report_wr03">소속</label>
+					<input type="text" id="report_wr03" name="" title="소속" placeholder="">
+				</li>
+				<li>
+					<label for="report_wr04">메일 제목</label>
+					<input type="text" id="report_wr04" name="" title="메일 제목" placeholder="" value="삼성카드 이벤트">
+				</li>
+				<li>
+					<label for="report_wr05">메일 내용</label>
+					<textarea rows="10" id="report_wr05" title="메일 내용" placeholder="신고 내용을 작성해주세요."></textarea>
+				</li>
+			</ul>
+			
+			<div class="btnBox">
+				<a href="" class="btn-gray">취소</a>
+				<a href="" class="btn-blue">저장</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

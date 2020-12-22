@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<title>샘플 - 세임</title>
+	<script src="../js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+</head>
+
+<body>
+	
+<!-- 내정보 변경 팝업 my-infor-modify -->
+<div class="layer-pop my-infor-modify" style="display: block;">
+	<div class="content-box">
+		<div class="tit">내 정보 수정</div>
+		<a href="" class="close-btn"><img src="../img/btn-close.png"></a>
+		<div class="modify-pop-cont">
+			<!-- 회원정보 수정 -->
+			<input type="radio" class="radio-tab" id="info-modify01" name="info-modify" checked><label for="info-modify01">회원정보 수정</label>
+			<div class="radio-tab-cont">
+				<ul class="modify-list">
+					<li>
+						<label for="modify-ip01">성명</label>
+						<input type="text" id="modify-ip01" placeholder="성명을 입력하세요" value="박성우">
+					</li>
+					<li>
+						<label for="modify-ip02">이메일</label>
+						<input type="text" id="modify-ip02" placeholder="이메일을 입력하세요" value="cyber@cyberone.kr">
+					</li>
+					<li>
+						<label for="modify-ip03">연락처</label>
+						<input type="text" id="modify-ip03" placeholder="연락처를 입력하세요">
+					</li>
+					<li>
+						<label for="modify-ip04">부서</label>
+						<input type="text" id="modify-ip04" placeholder="부서를 입력하세요">
+					</li>
+					<li>
+						<label for="modify-ip05">직급</label>
+						<input type="text" id="modify-ip05" placeholder="직급을 입력하세요">
+					</li>
+				</ul>
+				<p class="error-msg" style="display: none;">연락처를 확인해주세요.</p><!-- 에러메시지 -->
+				<div class="btn-center">
+					<a href="" class="btn-common btn-next">저장</a>
+				</div>
+			</div>
+			<!-- // 회원정보 수정 -->
+
+			<!-- 비밀번호 변경 -->
+			<input type="radio" class="radio-tab" id="info-modify02" name="info-modify"><label for="info-modify02">비밀번호 변경</label>
+			<div class="radio-tab-cont">
+				<ul class="modify-list">
+					<li>
+						<label for="modify-pw01">현재 비밀번호</label>
+						<input type="password" id="modify-pw01" placeholder="현재 비밀번호를 입력하세요.">
+					</li>
+					<li>
+						<label for="modify-pw02">새 비밀번호</label>
+						<input type="password" id="modify-pw02" placeholder="새 비밀번호를 입력하세요.">
+					</li>
+					<li>
+						<label for="modify-pw03">새 비밀번호 확인</label>
+						<input type="password" id="modify-pw03" placeholder="새 비밀번호를 한번 더 입력하세요.">
+					</li>
+				</ul>
+				<p class="error-msg" style="display: none;">비밀번호를 확인해주세요.</p><!-- 에러메시지 -->
+				<div class="btn-center">
+					<a href="" class="btn-common btn-next">변경</a>
+				</div>
+			</div>
+			<!-- // 비밀번호 변경 -->
+		</div>
+	</div>
+</div>
+<!-- // 내정보 변경 팝업 my-infor-modify -->
+
+	<!-- 로딩바 -->
+	<div class="loading-bar"></div>
+	<!-- // 로딩바 -->
+	
+	<!-- 알럿창 -->
+	<div class="alert-pop">
+		<div class="pop-inner">
+			<h2>Title</h2><!-- 불필요시 삭제 -->
+			<p>로그인 되었습니다.</p>
+	
+			<div class="btn-sect">
+				<button type="button" class="btn-confirm">확인</button>
+				<button type="button" class="btn-cancel">취소</button><!-- 불필요시 삭제 -->
+			</div>
+		</div>
+	</div>
+	<!-- // 알럿창 -->
+
+</body>
+</html>

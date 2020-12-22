@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<title>세임</title>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/layout.css">
+<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css" />
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+		// (function($){
+		// 	$(window).on("load",function(){
+		// 		$("#contents-wrap-sub #sub-contents").mCustomScrollbar({theme:"dark", axis:"y" });
+		// 		$("#contents-wrap-sub #sub-contents .sub-wrap .content-wrap .scroll-box").mCustomScrollbar({theme:"dark", axis:"y" });
+		// 	});
+		// })(jQuery)
+	</script>
+</head>
+<body>
+
+<!-- 미리보기 팝업-->
+<div class="layer-pop preview-img-pop" style="display:block">
+	<div class="content-box">
+		<a href="" class="close-btn"><img src="../img/btn-close.png"></a>
+
+		<h3>템플릿 미리보기</h3>
+		<div class="preview-img-box">
+			<img src="http://10.165.60.56:8080/template/9/thumb.png?172820" alt="이미지">
+		</div>
+		<!-- 이미지 영역 -->
+	</div>
+</div>
+<!-- // 미리보기 팝업-->
+
+<div id="wrap">
+	<div id="left-menu">
+		<a href="" class="logo"><img src="../img/logo.png"></a>
+		<div class="user">
+			<img src="../img/user-img.png">
+			<p>관리자<a href=""><img src="../img/icon-setting.png"></a></p>
+			administrator
+			<div class="user-depth2 depth2">
+				<a href="">내정보</a>
+				<a href="">도움말</a>
+				<a href="">로그아웃</a>
+			</div>
+		</div>
+		<ul>
+			<li class="smenu01"><a href=""><img src="../img/left-menu-icon01.png">훈련시작</a></li>
+			<li><a href=""><img src="../img/left-menu-icon02.png">결과보기</a></li>
+			<li><a href=""><img src="../img/left-menu-icon03.png">대상자 관리</a></li>
+			<li><a href="" class="setting-hover"><img src="../img/left-menu-icon04.png">설정</a>
+				
+				<div class="settin-depth2 depth2">
+					<a href="">내정보</a>
+					<a href="">계정관리</a>
+					<a href="">템플릿관리</a>
+					<a href="">SMTP 설정</a>
+					<a href="">도움말</a>
+					<a href="">로그아웃</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="contents-wrap-sub">
+		<div id="top-tit">
+			<div class="sub-tit"><img src="../img/sub-tit-icon.png">훈련시작</div>
+			<div class="path"><img src="../img/icon-home.png" class="home"><img src="../img/icon-arr.png">훈련시작<img src="../img/icon-arr.png">대상자 선택</div>
+		</div>
+		<div id="sub-contents">		
+			<div class="sub-wrap">
+				<div class="content-wrap">
+					<div class="step bg02">
+						<ul>
+							<li class="txt40"><img src="../img/step-icon01-40.png">시작하기</li>
+							<li><img src="../img/step-icon02.png">템플릿 선택</li>
+							<li><img src="../img/step-icon03.png">메일 설정</li>
+							<li><img src="../img/step-icon04.png">대상자 선택</li>
+							<li><img src="../img/step-icon05.png">교육 선택</li>
+							<li><img src="../img/step-icon06.png">검토 및 발송</li>
+						</ul>
+					</div>
+					<div class="sub-m-tit">템플릿 선택</div>
+					<table class="template-box">
+						<tr>
+							<th>훈련 유형 선택</th>
+							<td>
+								<div class="check-list">
+									<div class="chk-type01">
+										<input name="com_booth" class="chk1" id="chk-type0100" type="radio" value="Y"><i></i><label for="chk-type0100">전체</label>
+									</div>
+									<div class="chk-type01">
+										<input name="com_booth" class="chk1" id="chk-type0101" type="radio" value="Y"><i></i><label for="chk-type0101">링크 타입</label>
+									</div>
+									<div class="chk-type01">
+										<input name="com_booth" class="chk1" id="chk-type0102" type="radio" value="Y"><i></i><label for="chk-type0102">첨부파일 타입</label>
+									</div>
+									<div class="chk-type01">
+										<input name="com_booth" class="chk1" id="chk-type0103" type="radio" value="Y"><i></i><label for="chk-type0103">정보유출 타입</label>
+									</div>
+								</div>
+								<div class="template-info">
+									<ul>
+										<li><span class="tit-color01"><img src="../img/sub-icon03.png">링크 타입</span>목표한 사용자에게 이메일의 링크를 클릭하여  감염되도록 유도합니다.</li>
+										<li><span class="tit-color02"><img src="../img/sub-icon04.png">랜섬웨어 타입</span>목표한 사용자에게 첨부파일은 다운로드 후 해당 파일을 실행하여 감염되도록 유도합니다.</li>
+										<li><span class="tit-color03"><img src="../img/sub-icon05.png">정보유출  타입</span>목표한 사용자에게 특정 페이지나 서비스를 제공하여 자신의 정보 입력하고 유출되도록 유도합니다.</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>템플릿 선택</th>
+							<td>
+							<div class="Top_select">
+								<a href="javascript:;" class="Top_select_kind">카테고리</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+									<a href="javascript:;">선택4</a>
+									<a href="javascript:;">선택5</a>
+								</div>
+							</div>
+							<div class="Top_select">
+								<a href="javascript:;" class="Top_select_kind">템플릿 구분</a>
+								<div class="Top_select_view">
+									<a href="javascript:;">선택1</a>
+									<a href="javascript:;">선택2</a>
+									<a href="javascript:;">선택3</a>
+									<a href="javascript:;">선택4</a>
+									<a href="javascript:;">선택5</a>
+								</div>
+							</div>
+						</td>
+						</tr>
+					</table>
+					<div class="scroll-box">
+						<div class="list-type01">
+							<ul>
+								<li>
+									<div class="list-type01_chk">
+										<input name="com_booth" class="chk1" id="list-type01_chk" type="checkbox" value="Y">
+										<label for="list-type01_chk">
+											<div class="check">올바르지 않은 Apple ID</div>
+											<div class="thumnail">
+												<div class="no-img">템플릿 미리보기 화면</div>
+											</div>
+											<div class="tag">
+												<span class="bg-gray">기본</span>
+												<span class="bg-sky">랜섬웨어</span>
+												<span class="bg-yellow">자격증명</span>
+												<span class="bg-blue">링크</span>
+											</div>
+										</label>
+										
+										<button type="button" class="btn-preview tooltip-info"><i class="tooltip-txt">미리보기</i></button><!-- 미리보기 버튼 추가 -->
+									</div>
+								</li>
+								<li>
+									<div class="list-type01_chk">
+										<input name="com_booth" class="chk1" id="list-type01_chk01" type="checkbox" value="Y">
+										<label for="list-type01_chk01">
+											<div class="check">올바르지 않은 Apple ID</div>
+											<div class="thumnail">
+												<div class="no-img">템플릿 미리보기 화면</div>
+											</div>
+											<div class="tag">
+												<span class="bg-gray">기본</span>
+												<span class="bg-sky">랜섬웨어</span>
+												<span class="bg-yellow">자격증명</span>
+												<span class="bg-blue">링크</span>
+											</div>
+										</label>
+
+										<button type="button" class="btn-preview tooltip-info"><i class="tooltip-txt">미리보기</i></button><!-- 미리보기 버튼 추가 -->
+									</div>
+								</li>
+								<li>
+									<div class="list-type01_chk">
+										<input name="com_booth" class="chk1" id="list-type01_chk02" type="checkbox" value="Y">
+										<label for="list-type01_chk02">
+											<div class="check">올바르지 않은 Apple ID</div>
+											<div class="thumnail">
+												<div class="no-img">템플릿 미리보기 화면</div>
+											</div>
+											<div class="tag">
+												<span class="bg-gray">기본</span>
+												<span class="bg-sky">랜섬웨어</span>
+												<span class="bg-yellow">자격증명</span>
+												<span class="bg-blue">링크</span>
+											</div>
+										</label>
+										
+										<button type="button" class="btn-preview tooltip-info"><i class="tooltip-txt">미리보기</i></button><!-- 미리보기 버튼 추가 -->
+									</div>
+								</li>
+								<li>
+									<div class="list-type01_chk">
+										<input name="com_booth" class="chk1" id="list-type01_chk" type="checkbox" value="Y">
+										<label for="list-type01_chk">
+											<div class="check">올바르지 않은 Apple ID</div>
+											<div class="thumnail">
+												<div class="no-img">템플릿 미리보기 화면</div>
+											</div>
+											<div class="tag">
+												<span class="bg-gray">기본</span>
+												<span class="bg-sky">랜섬웨어</span>
+												<span class="bg-yellow">자격증명</span>
+												<span class="bg-blue">링크</span>
+											</div>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="list-type01_chk">
+										<input name="com_booth" class="chk1" id="list-type01_chk" type="checkbox" value="Y">
+										<label for="list-type01_chk">
+											<div class="check">올바르지 않은 Apple ID</div>
+											<div class="thumnail">
+												<div class="no-img">템플릿 미리보기 화면</div>
+											</div>
+											<div class="tag">
+												<span class="bg-gray">기본</span>
+												<span class="bg-sky">랜섬웨어</span>
+												<span class="bg-yellow">자격증명</span>
+												<span class="bg-blue">링크</span>
+											</div>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="list-type01_chk">
+										<input name="com_booth" class="chk1" id="list-type01_chk" type="checkbox" value="Y">
+										<label for="list-type01_chk">
+											<div class="check">올바르지 않은 Apple ID</div>
+											<div class="thumnail">
+												<div class="no-img">템플릿 미리보기 화면</div>
+											</div>
+											<div class="tag">
+												<span class="bg-gray">기본</span>
+												<span class="bg-sky">랜섬웨어</span>
+												<span class="bg-yellow">자격증명</span>
+												<span class="bg-blue">링크</span>
+											</div>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="list-type01_chk">
+										<input name="com_booth" class="chk1" id="list-type01_chk" type="checkbox" value="Y">
+										<label for="list-type01_chk">
+											<div class="check">올바르지 않은 Apple ID</div>
+											<div class="thumnail">
+												<div class="no-img">템플릿 미리보기 화면</div>
+											</div>
+											<div class="tag">
+												<span class="bg-gray">기본</span>
+												<span class="bg-sky">랜섬웨어</span>
+												<span class="bg-yellow">자격증명</span>
+												<span class="bg-blue">링크</span>
+											</div>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="right-btn mb50">
+						<a href="" class="btn-common btn-pre"><img src="../img/btn-arr-left.png">뒤로</a>
+						<a href="" class="btn-common btn-next">다음<img src="../img/btn-arr-right.png"></a>
+					</div>
+
+
+				</div>
+			
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
